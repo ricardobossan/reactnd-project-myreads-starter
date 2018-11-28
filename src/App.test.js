@@ -13,4 +13,9 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div)
 })
 
+it('returns true', () => {
+	const a = true;
+	expect(a).toBe(true);
+})
+
 
