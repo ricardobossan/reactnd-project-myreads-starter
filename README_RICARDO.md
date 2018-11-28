@@ -1,3 +1,8 @@
-## [React Testing With Jest][0]
+# MyReads App
 
-[0]:https://www.youtube.com/playlist?list=PLLnpHn493BHEqP3gD1pCJYhxX6v2gBZzj
+## [Testing][0]
+
+* Youtube Playlist CodingItWrong: "Test-Driven Development in React" [1]
+
+[0]:https://facebook.github.io/create-react-app/docs/running-tests
+[1]:https://www.youtube.com/watch?v=0aAdglT39go&list=PLXXnezSEtvNMlfJFd1Z2wilxymcOaVl9Q
