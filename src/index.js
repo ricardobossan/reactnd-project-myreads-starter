@@ -24,6 +24,7 @@
  * @todo performance boost. Appy these techniques: 
  *	https://facebook.github.io/react/docs/optimizing-performance.html
  *	https://reactjs.org/docs/reconciliation.html#the-diffing-algorithm
+ *	https://www.youtube.com/watch?v=nl8VVig_9aM
  * @todo create service worker
  */
 import React from 'react'
