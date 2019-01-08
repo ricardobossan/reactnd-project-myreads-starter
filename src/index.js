@@ -1,5 +1,7 @@
 /**
- * @todo manage State
+ * @todo Think how'll I access the database from API, with localhost (as done in the reactL3 project, in the server files)
+ * @todo use the header "authorization": "token", to make API requests secure (https://auth0.com/learn/token-based-authentication-made-easy/)
+ @todo manage State
  *	Where do I put the State? A: inside a parent element of where the data will be used. See Unidirectional Data Flow (https://classroom.udacity.com/nanodegrees/nd001/parts/c3e7b0d6-ffef-4421-b5fc-6df10fd0a1ae/modules/82766b2b-1870-4904-aa90-8ccbe63928c5/lessons/9a065aa0-91d4-44a3-ad96-8d9b44be4d11/concepts/03b53d7e-ae83-4846-bff3-bc4015cd8d76)
  *	Which components will need access to the State (Controlled Components) (component for the <form> tag)?
  * @todo build Components (composition)
