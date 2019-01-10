@@ -1,9 +1,9 @@
 /**
  * @todo draw the whole app functionality first
  *    leverage React Router (react-router-dom)
- *			install react-router-dom
- *			modify `app.js`
- *				``import { Route } from 'react-router-dom'``
+ *			OK	install react-router-dom
+ *			OK	modify `app.js`
+ *			OK	``import { Route } from 'react-router-dom'``
  *				```
 		        <Route path="/search" render={() => (
 		        	)}/>
@@ -11,9 +11,9 @@
 		        <Route exact path="/" render={() => (
 		        	)}/>
         	```
- *				change `<button>` tags to `<link className="class" to="/path">name</link>`
+ *			change `<button>` tags to `<link className="class" to="/path">name</link>`
  *    build components
- *    manage state
+ *    manage state: ``When a book is on a bookshelf, it should have the same state on both the main application page and the search page.``
  * @todo Use API server and client library that you will use to persist information as you interact with the application.
  *    Instructions for using the API methods are provided in the README in the [starter template repository](https://github.com/udacity/reactnd-project-myreads-starter)
  * @todo Think how'll I access the database from API, with localhost (as done in the reactL3 project, in the server files)
