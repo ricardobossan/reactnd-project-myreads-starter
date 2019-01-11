@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
-// import * as BooksAPI from './BooksAPI'
+import * as BooksAPI from './BooksAPI'
 import './App.css'
 
 class BooksApp extends React.Component {
@@ -11,7 +11,11 @@ class BooksApp extends React.Component {
      * users can use the browser's back and forward buttons to navigate between
      * pages, as well as provide a good URL they can bookmark and share.
      */
-    showSearchPage: false
+     books: []
+  }
+
+  componentDidMount() {
+    BooksAPI.getAll().then((books) => this.setState( { books } ))
   }
 
   render() {
@@ -41,6 +45,12 @@ class BooksApp extends React.Component {
           )}/>
         <Route exact path="/" render={() => (
           <div className="list-books">
+          {setTimeout(() => console.log(this.state.books[0].imageLinks.thumbnail),2000)}
+          {setTimeout(() => {
+            const string1 = this.state.books[0].imageLinks.thumbnail
+            console.log(string1)
+            document.querySelector('.book-cover').setAttribute("style", `width: 128px; height: 193px; background-image:url(${string1});`)
+            },1500)}
             <div className="list-books-title">
               <h1>MyReads</h1>
             </div>

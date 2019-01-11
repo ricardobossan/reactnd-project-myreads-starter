@@ -1,6 +1,6 @@
 /**
  * @todo draw the whole app functionality first
- *    leverage React Router (react-router-dom)
+ *    OK leverage React Router (react-router-dom)
  *			OK	install react-router-dom
  *			OK	modify `app.js`
  *			OK	``import { Route } from 'react-router-dom'``
@@ -11,8 +11,10 @@
 		        <Route exact path="/" render={() => (
 		        	)}/>
         	```
- *			change `<button>` tags to `<link className="class" to="/path">name</link>`
+ *			OK change `<button>` tags to `<link className="class" to="/path">name</link>`
  *    build components
+ *			OK use and credit this: [Create React App with an Express Backend
+](https://www.youtube.com/watch?v=8bNlffXEcC0) -> Don't need it, i think. the model is already located at "http://Some_Google_URL". I'll just have to save it to local storage, and feed the UI from there, preferably (if, else statements)
  *    manage state: ``When a book is on a bookshelf, it should have the same state on both the main application page and the search page.``
  * @todo Use API server and client library that you will use to persist information as you interact with the application.
  *    Instructions for using the API methods are provided in the README in the [starter template repository](https://github.com/udacity/reactnd-project-myreads-starter)
