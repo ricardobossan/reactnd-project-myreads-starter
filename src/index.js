@@ -15,7 +15,9 @@
  *    build components
  *			OK use and credit this: [Create React App with an Express Backend
 ](https://www.youtube.com/watch?v=8bNlffXEcC0) -> Don't need it, i think. the model is already located at "http://Some_Google_URL". I'll just have to save it to local storage, and feed the UI from there, preferably (if, else statements)
+ *			Using instructions from "Thinking in React", from chrome's favorites
  *    manage state: ``When a book is on a bookshelf, it should have the same state on both the main application page and the search page.``
+ *			the model is already located at "http://Some_Google_URL". I'll just have to save it to local storage, and feed the UI from there, preferably (if, else statements)
  * @todo Use API server and client library that you will use to persist information as you interact with the application.
  *    Instructions for using the API methods are provided in the README in the [starter template repository](https://github.com/udacity/reactnd-project-myreads-starter)
  * @todo Think how'll I access the database from API, with localhost (as done in the reactL3 project, in the server files)
