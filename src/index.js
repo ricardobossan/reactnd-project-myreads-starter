@@ -1,4 +1,5 @@
 /**
+ * @todo for component's containers with no className, use React.Fragment, instead of div
  * @todo draw the whole app functionality first
  *    OK leverage React Router (react-router-dom)
  *			OK	install react-router-dom
@@ -37,16 +38,17 @@
  * @todo
  * @todo
  * @todo
- * @todo Go above and beyond (add extra features, as mentioned on concept 4)
+ * @todo - Optional - Go above and beyond (add extra features, as mentioned on concept 4)
  * @todo see that the project follows Udacity's Style Guides (HTML, CSS, JS and GIT)
- * @todo see if there's docs generator for react. Probably just stic with React Dev Tools
+ * @todo - Optional see if there's docs generator for react. Probably just stic with React Dev Tools
  * @todo see about test runner for react or just best pratices
  * @todo performance boost. Appy these techniques: 
  *  https://reactjs.org/docs/optimizing-performance.html#use-the-production-build
  *  https://facebook.github.io/react/docs/optimizing-performance.html
  *  https://reactjs.org/docs/reconciliation.html#the-diffing-algorithm
  *  https://www.youtube.com/watch?v=nl8VVig_9aM
- * @todo create service worker
+ * @todo - Optional - create service worker
+ * @todo - Optional - customize style with bootstrap or react-bootstrap (https://www.npmjs.com/package/react-bootstrap)
  * @todo OK Q: see how git cleans working directory. A: ``git reset --hard`` (!== from ``git checkout .``, which just unstage changes)
  * @todo OK test the App every step along the way
  *  OK Will test without test runners, because I should understand react better first
