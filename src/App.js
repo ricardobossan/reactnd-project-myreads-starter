@@ -30,7 +30,7 @@ class BooksApp extends React.Component {
           )}/>
         <Route exact path="/" render={() => (
           <BooksList
-           ClassName=""
+            books={this.state.books}
            />
           )}/>
       </div>

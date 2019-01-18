@@ -14,9 +14,11 @@
         	```
  *			OK change `<button>` tags to `<link className="class" to="/path">name</link>`
  *    build components
- *			OK use and credit this: [Create React App with an Express Backend
-](https://www.youtube.com/watch?v=8bNlffXEcC0) -> Don't need it, i think. the model is already located at "http://Some_Google_URL". I'll just have to save it to local storage, and feed the UI from there, preferably (if, else statements)
  *			Using instructions from "Thinking in React", from chrome's favorites
+ *				OK Break the UI Into a Component Hierarchy
+ *				Build a Static Version in React
+ *					Build components that reuse other components, and pass data using props (state is only for interactivity.)
+ *						Build a BookListOnShelf, that maps on books asigned for that shelf's state, the Book component, on a list, nested dynamically 
  *    manage state: ``When a book is on a bookshelf, it should have the same state on both the main application page and the search page.``
  *			the model is already located at "http://Some_Google_URL". I'll just have to save it to local storage, and feed the UI from there, preferably (if, else statements)
  * @todo Use API server and client library that you will use to persist information as you interact with the application.
