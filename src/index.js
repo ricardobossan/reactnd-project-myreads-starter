@@ -1,4 +1,12 @@
 /**
+ * @todo reorganize todos, due to guide put together with resources from "Thinking in React" and Mosh's "React Crash Course 2018"
+ *		Using instructions from "Thinking in React", from chrome's favorites:
+ *			@todo OK Break the UI Into a Component Hierarchy
+ *			@todo Build a Static Version in React
+ *			@todo 	Build components that reuse other components, and pass data using props (state is only for interactivity.)
+ *				@todo	Build a BookListOnShelf, that maps on books asigned for that shelf's state, the Book component, on a list, nested dynamically 
+ *
+ *
  * @todo for component's containers with no className, use React.Fragment, instead of div
  * @todo draw the whole app functionality first
  *    OK leverage React Router (react-router-dom)
@@ -14,11 +22,6 @@
         	```
  *			OK change `<button>` tags to `<link className="class" to="/path">name</link>`
  *    build components
- *			Using instructions from "Thinking in React", from chrome's favorites
- *				OK Break the UI Into a Component Hierarchy
- *				Build a Static Version in React
- *					Build components that reuse other components, and pass data using props (state is only for interactivity.)
- *						Build a BookListOnShelf, that maps on books asigned for that shelf's state, the Book component, on a list, nested dynamically 
  *    manage state: ``When a book is on a bookshelf, it should have the same state on both the main application page and the search page.``
  *			the model is already located at "http://Some_Google_URL". I'll just have to save it to local storage, and feed the UI from there, preferably (if, else statements)
  * @todo Use API server and client library that you will use to persist information as you interact with the application.
