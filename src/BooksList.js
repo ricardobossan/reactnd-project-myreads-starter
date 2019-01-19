@@ -5,19 +5,7 @@ import * as BooksAPI from './BooksAPI'
 import PropTypes from 'prop-types'
 
 class BooksList extends Component {
-  state = {
-    /*
-      Initial state for which books are on which shelf, on route "/"
-      Changes will be made by the booShelfChanger component
-    */
-    books: [],
-    shelves: [
-      {"a": ["book-1", "book-2", "book-3"]},
-      {"b": ["book-4", "book-5"]},
-      {"c": ["book-6", "book-7"]}
-     ]
-  }
-
+  
   PropTypes = {
     books: PropTypes.array.isRequired
   }

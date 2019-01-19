@@ -2,11 +2,11 @@
  * @todo reorganize todos, due to guide put together with resources from "Thinking in React" and Mosh's "React Crash Course 2018"
  *		Using instructions from "Thinking in React", from chrome's favorites:
  *			@todo OK Break the UI Into a Component Hierarchy
- *			@todo Build a Static Version in React
- *			@todo 	Build components that reuse other components, and pass data using props (state is only for interactivity.)
- *				@todo	Build a BookListOnShelf, that maps on books asigned for that shelf's state, the Book component, on a list, nested dynamically
- *				@todo move the shelves state from the BooksList component to App.js
+ *			@todo OK Build a Static Version in React
+ *			@todo 	OK	Build components that reuse other components, and pass data using props (state is only for interactivity.)
+ *				@todo move the shelves state from the BooksList component to App.js, and pass props accordingly
  *				@todo seems like the common owner will be App.js. Implement better checking for it's render() method, to ensure all state is passed to the lower components
+ *				@todo	Build a Shelves component, that maps on books assigned for each shelf on the Shelves state, on a list, nested dynamically
  *				@todo create nested maps in the Shelves component, to iterate shelves and it's lists of books, based on App.js's state.
  *				@todo apply destructuring to each component's props, to avoid the props.props.props... effect.
  *
