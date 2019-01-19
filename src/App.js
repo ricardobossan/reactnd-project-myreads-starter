@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import BooksList from './BooksList'
 import SearchBooks from './SearchBooks'
 import * as BooksAPI from './BooksAPI'
@@ -21,7 +21,7 @@ class BooksApp extends React.Component {
     BooksAPI.getAll().then((books) => this.setState( { books , 
       "shelves": [
         {"Currently Reading": [
-          "book-1", "book-2", "book-3"
+          this.state.books[0], "book-2", "book-3"
         ]},
         {"Want to Read": [
           "book-4", "book-5"
@@ -37,6 +37,7 @@ class BooksApp extends React.Component {
     const { books, shelves } = this.state
     // Perform a check to see if the state was updated
     if((books.length = 7) && (shelves.length = 3)) {
+      console.log(this.state)
       return (
         <div className="app">
           <Route path="/search" render={() => (
