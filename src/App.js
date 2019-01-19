@@ -22,19 +22,22 @@ class BooksApp extends React.Component {
   }
 
   render() {
-    return (
-      <div className="app">
-        <Route path="/search" render={() => (
-          <SearchBooks
-           />
-          )}/>
-        <Route exact path="/" render={() => (
-          <BooksList
-            books={this.state.books}
-           />
-          )}/>
-      </div>
-    )
+    // Perform a check to see if the state was updated
+    if(this.state.books.length = 7) {
+      return (
+        <div className="app">
+          <Route path="/search" render={() => (
+            <SearchBooks
+             />
+            )}/>
+          <Route exact path="/" render={() => (
+            <BooksList
+              books={this.state.books}
+             />
+            )}/>
+        </div>
+      )
+    }      
   }
 }
 

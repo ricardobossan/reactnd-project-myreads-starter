@@ -4,7 +4,12 @@
  *			@todo OK Break the UI Into a Component Hierarchy
  *			@todo Build a Static Version in React
  *			@todo 	Build components that reuse other components, and pass data using props (state is only for interactivity.)
- *				@todo	Build a BookListOnShelf, that maps on books asigned for that shelf's state, the Book component, on a list, nested dynamically 
+ *				@todo	Build a BookListOnShelf, that maps on books asigned for that shelf's state, the Book component, on a list, nested dynamically
+ *				@todo move the shelves state from the BooksList component to App.js
+ *				@todo seems like the common owner will be App.js. Implement better checking for it's render() method, to ensure all state is passed to the lower components
+ *				@todo create nested maps in the Shelves component, to iterate shelves and it's lists of books, based on App.js's state.
+ *				@todo apply destructuring to each component's props, to avoid the props.props.props... effect.
+ *
  *
  *
  * @todo for component's containers with no className, use React.Fragment, instead of div
