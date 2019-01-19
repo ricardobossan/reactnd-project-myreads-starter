@@ -18,18 +18,22 @@ class BooksApp extends React.Component {
   }
 
   componentDidMount() {
-    BooksAPI.getAll().then((books) => this.setState( { books , 
+    BooksAPI.getAll().then((resp) => resp).then((books) => {
+    this.setState( { books , 
       "shelves": [
         {"Currently Reading": [
-          this.state.books[0], "book-2", "book-3"
+          books[0], books[1], books[2]
         ]},
         {"Want to Read": [
-          "book-4", "book-5"
+          books[3], books[4]
         ]},
         {"Read": [
-          "book-6", "book-7"
+          books[5], books[6]
         ]}
-      ]}))
+      ]})      
+    }
+)
+
     .then(() => console.log(this.state))
   }
 
@@ -37,7 +41,7 @@ class BooksApp extends React.Component {
     const { books, shelves } = this.state
     // Perform a check to see if the state was updated
     if((books.length = 7) && (shelves.length = 3)) {
-      console.log(this.state)
+      console.log()
       return (
         <div className="app">
           <Route path="/search" render={() => (
