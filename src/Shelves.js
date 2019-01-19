@@ -3,6 +3,7 @@ import BookShelfChanger from './BookShelfChanger'
 
 class Shelves extends Component {
 	render() {
+		console.log(this.props)
 		return (
       <div>
         <div className="bookshelf">
