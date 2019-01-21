@@ -33,30 +33,25 @@ class BooksApp extends React.Component {
       ]})      
     }
 )
-
-    .then(() => console.log(this.state))
+ .then(() => console.log(this.state))
   }
 
   render() {
     const { books, shelves } = this.state
-    // Perform a check to see if the state was updated
-    if((books.length = 7) && (shelves.length = 3)) {
-      console.log()
-      return (
-        <div className="app">
-          <Route path="/search" render={() => (
-            <SearchBooks
-            books={books} shelves={shelves}
-             />
-            )}/>
-          <Route exact path="/" render={() => (
-            <BooksList
-            books={books} shelves={shelves}
-             />
-            )}/>
-        </div>
-      )
-    }      
+    return (
+      <div className="app">
+        <Route path="/search" render={() => (
+          <SearchBooks
+          books={books} shelves={shelves}
+           />
+          )}/>
+        <Route exact path="/" render={() => (
+          <BooksList
+          books={books} shelves={shelves}
+           />
+          )}/>
+      </div>
+    )
   }
 }
 

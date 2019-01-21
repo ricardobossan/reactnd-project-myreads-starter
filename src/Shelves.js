@@ -3,10 +3,13 @@ import BookShelfChanger from './BookShelfChanger'
 
 class Shelves extends Component {
 	render() {
-		console.log(this.props)
+		const { books, shelves } = this.props
 		return (
       <div>
         <div className="bookshelf">
+        {
+
+        }
           <h2 className="bookshelf-title">Currently Reading</h2>
           <div className="bookshelf-books">
             <ol className="books-grid">

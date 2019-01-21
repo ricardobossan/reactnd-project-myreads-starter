@@ -1,8 +1,5 @@
 /**
  * ________________TODOS________________
- * @todo reorganize todos, due to guide put together with resources from "Thinking in React" and Mosh's "React Crash Course 2018"
- *				@todo OK seems like the common owner will be App.js. Implement better checking for it's render() method, to ensure all state is passed to the lower components
- *				@todo update shelves data state to it's definitive skeleton
  *				@todo	Build a Shelves component, that maps on books assigned for each shelf on the Shelves state, on a list, nested dynamically
  *				@todo create nested maps in the Shelves component, to iterate shelves and it's lists of books, based on App.js's state.
  *				@todo apply destructuring to each component's props, to avoid the props.props.props... effect.
@@ -52,6 +49,8 @@
  *				@todo OK Get each Component functioning in isolation
  *				@todo OK And then connect the pieces together
  *				@todo OK move the shelves state from the BooksList component to App.js, and pass props accordingly
+ *				@todo OK seems like the common owner will be App.js. Implement better checking for it's render() method, to ensure all state is passed to the lower components
+ *				@todo update shelves data state for the definitive skeleton
  */
 import React from 'react'
 import ReactDOM from 'react-dom'
