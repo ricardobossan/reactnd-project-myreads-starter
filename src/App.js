@@ -18,7 +18,7 @@ class BooksApp extends React.Component {
   }
 
   componentDidMount() {
-    BooksAPI.getAll().then((resp) => resp).then((books) => {
+    BooksAPI.getAll().then((books) => {
     this.setState( { books , 
       "shelves": [
         {"Currently Reading": [
@@ -32,9 +32,8 @@ class BooksApp extends React.Component {
         ]}
       ]})      
     }
-)
- .then(() => console.log(this.state))
-  }
+  )
+}
 
   render() {
     const { books, shelves } = this.state

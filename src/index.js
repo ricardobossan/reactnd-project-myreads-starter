@@ -1,13 +1,11 @@
 /**
  * ________________TODOS________________
- *				@todo	Build a Shelves component, that maps on books assigned for each shelf on the Shelves state, on a list, nested dynamically
- *				@todo create nested maps in the Shelves component, to iterate shelves and it's lists of books, based on App.js's state.
- *				@todo apply destructuring to each component's props, to avoid the props.props.props... effect.
+ * @todo Add functionality to the BookShelfChanger component
+ * @todo Add functionality to the SearchBooks component
+ * 		@todo use regular expressions, with the regex.test(), string.match() and array.filter() methods to refine search for books (implement them using npm or yarn packages 'escape-string-regexp' and 'sort-by')
+ * 		@todo update the view as the state of the <form> component changes: '<input onChange={(event) => this.updateQuery(event.target.value)}>' ![code view](C:\Users\ricar\reactnd-project-myreads-starter\src\img\2018-12-25.png)
  * @todo
  * @todo
- * @todo
- * @todo use regular expressions, with the regex.test(), string.match() and array.filter() methods to refine search for books (implement them using npm or yarn packages 'escape-string-regexp' and 'sort-by')
- * @todo update the view as the state of the <form> component changes: '<input onChange={(event) => this.updateQuery(event.target.value)}>' ![code view](C:\Users\ricar\reactnd-project-myreads-starter\src\img\2018-12-25.png)
  * @todo see that the project follows Udacity's  Rubric andStyle Guides (HTML, CSS, JS and GIT)
  * @todo -- Optional -- Go above and beyond (add extra features, as mentioned on concept 4)
  * @todo - Optional -- see if there's docs generator for react. Probably just stic with React Dev Tools
@@ -50,7 +48,10 @@
  *				@todo OK And then connect the pieces together
  *				@todo OK move the shelves state from the BooksList component to App.js, and pass props accordingly
  *				@todo OK seems like the common owner will be App.js. Implement better checking for it's render() method, to ensure all state is passed to the lower components
- *				@todo update shelves data state for the definitive skeleton
+ *				@todo OK update shelves data state for the definitive skeleton
+ *				@todo	OK Build a Shelves component, that maps on books assigned for each shelf on the shelves state, on a list, nested dynamically
+ *				@todo OK create nested maps in the Shelves component, to iterate shelves and it's lists of books, based on App.js's state.
+ *				@todo OK apply destructuring to each component's props, to avoid the props.props.props... effect.
  */
 import React from 'react'
 import ReactDOM from 'react-dom'
