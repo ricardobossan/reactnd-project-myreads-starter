@@ -7,9 +7,9 @@ class Shelves extends Component {
 		return (
       <div>
         <div className="bookshelf">
-        {
-
-        }
+        {shelves.map((shelf) => 
+        	<h2 className="bookshelf-title" key={shelf}>{Object.keys(shelf)[0]}</h2>)}
+        	
           <h2 className="bookshelf-title">Currently Reading</h2>
           <div className="bookshelf-books">
             <ol className="books-grid">
