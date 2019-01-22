@@ -10,7 +10,7 @@ class BooksList extends Component {
   }
 
   render() {
-    const { books, shelves } = this.props
+    const { books, shelves, onMoveToCurrent } = this.props
     return (
       <div className="list-books">          
         <div className="list-books-title">
@@ -18,7 +18,7 @@ class BooksList extends Component {
         </div>
         <div className="list-books-content">
           <Shelves
-            books={books} shelves={shelves}
+          books={books} shelves={shelves} onMoveToCurrent={onMoveToCurrent}
           />
         </div>
         <div className="open-search">

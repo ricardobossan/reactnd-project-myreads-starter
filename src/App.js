@@ -2,6 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 import BooksList from './BooksList'
 import SearchBooks from './SearchBooks'
+import BookShelfChanger from './BookShelfChanger'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 
@@ -35,6 +36,11 @@ class BooksApp extends React.Component {
   )
 }
 
+handleOnMoveToCurrent(event) {
+  console.log("Event handler called")
+  console.log(event.target.value)
+}
+
   render() {
     const { books, shelves } = this.state
     return (
@@ -46,8 +52,8 @@ class BooksApp extends React.Component {
           )}/>
         <Route exact path="/" render={() => (
           <BooksList
-          books={books} shelves={shelves}
-           />
+          books={books} shelves={shelves} onMoveToCurrent={this.handleOnMoveToCurrent}
+           />          
           )}/>
       </div>
     )
