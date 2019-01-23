@@ -9,7 +9,7 @@ class BookShelfChanger extends Component {
     const { onMove, book} = this.props
 		return (
 	    <div className="book-shelf-changer">
-	      <select defaultValue="Currently Reading" onChange={() => onMove(book)}>
+	      <select defaultValue="Currently Reading" onChange={(event) => onMove(event.target.value, book)}>
 	        <option value="" disabled>Move to...</option>
 	        <option value="Currently Reading">Currently Reading</option>
 	        <option value="Want to Read">Want to Read</option>

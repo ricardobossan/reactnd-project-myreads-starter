@@ -36,8 +36,8 @@ class BooksApp extends React.Component {
     )
   }
 
-  handleOnMove(book) {  
-      console.log(book)
+  handleOnMove(e, book) {  
+      console.log(e, book)
       return book
   }
 
