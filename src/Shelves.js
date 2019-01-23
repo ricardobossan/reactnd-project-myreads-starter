@@ -3,7 +3,7 @@ import BookShelfChanger from './BookShelfChanger'
 
 class Shelves extends Component {
 	render() {
-    const { books, shelves, onMoveToCurrent } = this.props
+    const { books, shelves, onMove } = this.props
 		return (
       <div>
         <div className="bookshelf">
@@ -14,13 +14,14 @@ class Shelves extends Component {
 	          <div className="bookshelf-books">
   	          <ol className="books-grid">
   	          {
-	  	          Object.values(shelf)[0].map((book) => (
+	  	          Object.values(shelf)[0].map((book, index) => (
 		              <li key={book.id}>
 		                <div className="book">
 		                  <div className="book-top">
 		                    <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: `url(${book.imageLinks.thumbnail})` }}></div>
 		                    <BookShelfChanger
-	                         onMoveToCurrent={onMoveToCurrent}
+	                         onMove={onMove}
+	                         book={book}
 		                    /*shelf={Object.keys(shelf)[0]}*/
 		                    />
 		                  </div>

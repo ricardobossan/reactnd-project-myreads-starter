@@ -20,26 +20,26 @@ class BooksApp extends React.Component {
 
   componentDidMount() {
     BooksAPI.getAll().then((books) => {
-    this.setState( { books , 
-      "shelves": [
-        {"Currently Reading": [
-          books[0], books[1], books[2]
-        ]},
-        {"Want to Read": [
-          books[3], books[4]
-        ]},
-        {"Read": [
-          books[5], books[6]
-        ]}
-      ]})      
-    }
-  )
-}
+      this.setState( { books , 
+        "shelves": [
+          {"Currently Reading": [
+            books[0], books[1], books[2]
+          ]},
+          {"Want to Read": [
+            books[3], books[4]
+          ]},
+          {"Read": [
+            books[5], books[6]
+          ]}
+        ]})      
+      }
+    )
+  }
 
-handleOnMoveToCurrent(event) {
-  console.log("Event handler called")
-  console.log(event.target.value)
-}
+  handleOnMove(book) {  
+      console.log(book)
+      return book
+  }
 
   render() {
     const { books, shelves } = this.state
@@ -52,7 +52,7 @@ handleOnMoveToCurrent(event) {
           )}/>
         <Route exact path="/" render={() => (
           <BooksList
-          books={books} shelves={shelves} onMoveToCurrent={this.handleOnMoveToCurrent}
+          books={books} shelves={shelves} onMove={this.handleOnMove.bind(this)}
            />          
           )}/>
       </div>
