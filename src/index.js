@@ -1,6 +1,10 @@
 /**
  * ________________TODOS________________
  * @todo Add functionality to the BookShelfChanger component
+ *		Turns out the books state is all you need, because it has a shelf property, that you can update by calling the BooksAPI update method.
+ *			@todo Erase BooksApp.state.shelves
+ *			@todo reorganize props and values in the Shelves and BookShelfChanger components to use only props passed down from the books state in the BooksApp component
+ *			@todo update the shef property of the books by interacting with the BookShelfChanger component (state will be changed by calling the BooksAPI.update method, in BooksApp.handleOnMove method)
  * @todo Add functionality to the SearchBooks component
  * 		@todo use regular expressions, with the regex.test(), string.match() and array.filter() methods to refine search for books (implement them using npm or yarn packages 'escape-string-regexp' and 'sort-by')
  * 		@todo update the view as the state of the <form> component changes: '<input onChange={(event) => this.updateQuery(event.target.value)}>' ![code view](C:\Users\ricar\reactnd-project-myreads-starter\src\img\2018-12-25.png)

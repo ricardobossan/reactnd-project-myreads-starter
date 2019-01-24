@@ -21,7 +21,8 @@ class Shelves extends Component {
 		                    <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: `url(${book.imageLinks.thumbnail})` }}></div>
 		                    <BookShelfChanger
 	                         onMove={onMove}
-	                         book={book}
+	                         shelf={shelf}
+	                         bookIndex={index}
 		                    /*shelf={Object.keys(shelf)[0]}*/
 		                    />
 		                  </div>

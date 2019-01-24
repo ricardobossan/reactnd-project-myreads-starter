@@ -36,9 +36,28 @@ class BooksApp extends React.Component {
     )
   }
 
-  handleOnMove(e, book) {  
-      console.log(e, book)
-      return book
+  // update state:
+  // either by simply repositioning shelves positions
+  // either by using array methods splice and push, on the proper positions
+  handleOnMove(e, shelf, bookIndex) {  
+      // updated values
+      let shelfName = Object.keys(shelf).toString()
+      let bookName = Object.values(shelf).map((booksInShelf) => booksInShelf)[0][bookIndex]
+
+      console.log(shelf, e.target.value, shelfName, bookName, bookIndex)
+
+      // prevState
+      let prevShelfPositionChanged = Object.values(Object.values(this.state)[1])[e.target.value]
+      let prevStateBook = Object.values(Object.values(Object.values(Object.values(this.state)[0][bookIndex])))
+
+      let stateShelfName = Object.keys(Object.values(Object.values(this.state)[1])[1])[0]
+
+      console.log(prevStateBook, stateShelfName)
+/*
+      this.setState((prevState) => {
+            Object.keys(Object.values(Object.values(prevState)[1])[1])[0] = shelfName
+      })
+*/    console.log(this.state)
   }
 
   render() {
