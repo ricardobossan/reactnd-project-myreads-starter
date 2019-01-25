@@ -1,5 +1,11 @@
 /**
  * ________________TODOS________________
+ *
+ * ### Study Jam 21/07 - FEND P7 - My Reads ###
+ *
+ * @todo follow stesp in Trello/Udacity/Project: MyReads: A Book Tracking App
+ *
+ * ############################################
  * @todo Add functionality to the BookShelfChanger component
  *		Turns out the books state is all you need, because it has a shelf property, that you can update by calling the BooksAPI update method.
  *			@todo Erase BooksApp.state.shelves
@@ -11,6 +17,7 @@
  * @todo
  * @todo
  * @todo see that the project follows Udacity's  Rubric andStyle Guides (HTML, CSS, JS and GIT)
+ * @todo -- Optional -- Generate Documentation with [StuleGUidist](https://www.npmjs.com/package/react-styleguidist)
  * @todo -- Optional -- Go above and beyond (add extra features, as mentioned on concept 4)
  * @todo - Optional -- see if there's docs generator for react. Probably just stic with React Dev Tools
  * @todo -- Optional -- see about test runner for react or just best pratices
