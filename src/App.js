@@ -31,13 +31,11 @@ class BooksApp extends React.Component {
     console.log(book.shelf, e.target.value)
     if(book.shelf.toString() != e.target.value.toString() ) {
       console.log("moving to another shelf")
-    }
-
-/*
-      this.setState((prevState) => {
-            Object.keys(Object.values(Object.values(prevState)[1])[1])[0] = shelfName
+      BooksAPI.update(book, e.target.value)
+      BooksAPI.getAll().then((books) => {
+        this.setState( { books })      
       })
-*/
+    }
   }
 
   render() {
