@@ -13,7 +13,7 @@ class Shelves extends Component {
       <div>
         <div className="bookshelf">
         {
-        	shelfs.map((shelf, index) => (
+        	shelfs.map((shelf) => (
         	<div className="bookshelf" key={Object.keys(shelf)}>
 	        	<h2 className="bookshelf-title">{Object.values(shelf)}</h2>
 	          <div className="bookshelf-books">

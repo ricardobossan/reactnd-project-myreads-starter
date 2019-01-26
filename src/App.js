@@ -28,9 +28,7 @@ class BooksApp extends React.Component {
   // either by simply repositioning shelves positions
   // either by using array methods splice and push, on the proper positions
   handleOnMove(e, book) {
-    console.log(book.shelf, e.target.value)
     if(book.shelf.toString() != e.target.value.toString() ) {
-      console.log("moving to another shelf")
       BooksAPI.update(book, e.target.value)
       BooksAPI.getAll().then((books) => {
         this.setState( { books })      
