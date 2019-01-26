@@ -12,8 +12,8 @@ class Books extends Component {
           <div className="book-top">
             <div className="book-cover" 
             style={{ width: 128, height: 193, 
-            // if there's no thumbnail, returns an empty string
-            backgroundImage: book.imageLinks.thumbnail ? `url(${book.imageLinks.thumbnail})` : ""
+            // if there's no imageLink, returns an empty string
+            backgroundImage: book.imageLinks ? `url(${book.imageLinks.thumbnail})` : ""
            }}></div>
             <BookShelfChanger
                onMove={onMove}

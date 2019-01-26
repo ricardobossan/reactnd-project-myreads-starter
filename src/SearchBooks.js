@@ -30,10 +30,17 @@ class SearchBooks extends Component {
 	 * @method
 	 */
 	updateResults(query) {
-		BooksAPI.search(query).then(searchResults => this.setState({searchResults: searchResults})).catch((err) => console.log(err))
+		query ? 
+		BooksAPI.search(query).then(searchResults => {
+			searchResults.error ?
+				this.setState({searchResults: []})
+			: this.setState({searchResults: searchResults})				
+		})			
+		: this.setState({searchResults: []})			
 	}
 
 	render() {
+		const { onMove } = this.props
 		const { searchResults } = this.state
 		console.log(searchResults, this.state.query)
 		return (
@@ -55,6 +62,7 @@ class SearchBooks extends Component {
 		        	searchResults.map((book) => (
 		        		<Book
 		        			book={book}
+		        			onMove={onMove}
 		        		/>
 		        	))	        	
 		        	: []	
