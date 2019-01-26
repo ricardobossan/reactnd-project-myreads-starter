@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Shelves from './Shelves'
 import PropTypes from 'prop-types'
+import Shelves from './Shelves'
 
+/**
+ * Renders grid of shelves.
+ * @class
+ */
 class BooksList extends Component {
-  
+
   PropTypes = {
     books: PropTypes.array.isRequired
   }

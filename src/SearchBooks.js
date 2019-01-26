@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import * as BooksAPI from './BooksAPI'
 
+/**
+ * Search for books on user input, and return results.
+ * @class
+ */
 class SearchBooks extends Component {
 
 	state = {
@@ -9,11 +13,25 @@ class SearchBooks extends Component {
 		searchResults: []
 	}
 
+	/**
+	 * Updates query state upon user input.
+	 * @method
+	 */
 	updateQuery = (e, query) => {
 		this.setState({
 			query: e.target.value
 		})
-		BooksAPI.search()
+		this.updateResults(this.state.query)
+	}
+
+	/**
+	 * Posts search results to the server. If there's no search result, nothing is shown.
+	 * @method
+	 */
+	updateResults(query) {
+		this.state.query ?
+		BooksAPI.search(query).then(searchResults => this.setState({searchResults: searchResults})) :
+		this.setState({searchResults: []})
 	}
 
 	render() {

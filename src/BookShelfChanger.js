@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
+/**
+ * Controller for moving books between shelves.
+ * @class
+ */
 class BookShelfChanger extends Component {
-	onCurrent(callBack) {
-		callBack()
-	}
-
 	render() {
     const { onMove, book} = this.props
 		return (

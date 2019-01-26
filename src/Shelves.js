@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import BookShelfChanger from './BookShelfChanger'
 
+/**
+ * Renders books allocated on each shelf.
+ * @class
+ */
 class Shelves extends Component {
 	render() {
 		const shelfs = [

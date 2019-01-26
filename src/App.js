@@ -5,6 +5,10 @@ import SearchBooks from './SearchBooks'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 
+/**
+ * Main component for the app.
+ * @class
+ */
 class BooksApp extends React.Component {
   state = {
     /**

@@ -70,4 +70,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
 
+/**
+ * Renders the virtual DOM on the DOM.
+ */
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'))
