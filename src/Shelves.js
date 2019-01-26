@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import BookShelfChanger from './BookShelfChanger'
+import Book from './Book'
 
 /**
  * Renders books allocated on each shelf.
@@ -23,24 +24,11 @@ class Shelves extends Component {
 	          <div className="bookshelf-books">
   	          <ol className="books-grid">
   	          {
-	  	          books.filter((book) => book.shelf == Object.keys(shelf)).map((book, i) => (	  	          
-		              <li key={book.id}>
-		                <div className="book">
-		                  <div className="book-top">
-		                    <div className="book-cover" 
-		                    style={{ width: 128, height: 193, 
-		                    // if there's no thumbnail, returns an empty string
-		                    backgroundImage: book.imageLinks.thumbnail ? `url(${book.imageLinks.thumbnail})` : ""
-		                   }}></div>
-		                    <BookShelfChanger
-	                         onMove={onMove}
-	                         book={book}
-		                    />
-		                  </div>
-		                  <div className="book-title">{book.title}</div>
-		                  <div className="book-authors">{book.authors}</div>
-		                </div>
-		              </li>								
+	  	          books.filter((book) => book.shelf == Object.keys(shelf)).map((book, i) => (
+	  	          	<Book
+			               onMove={onMove}
+			               book={book}
+	  	          	/>
 	  	          ))  	          	
   	          }
   	          </ol>
