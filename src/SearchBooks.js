@@ -36,13 +36,15 @@ class SearchBooks extends Component {
 				this.setState({searchResults: []})
 			: this.setState({searchResults: searchResults})				
 		})			
-		: this.setState({searchResults: []})			
+		: query == "" ?
+		// Had to delay state change because it would not happend everytime
+		setTimeout(() => this.setState({searchResults: []}), 1000)
+		: setTimeout(() => this.setState({searchResults: []}), 1000)
 	}
 
 	render() {
 		const { onMove } = this.props
 		const { searchResults } = this.state
-		console.log(searchResults, this.state.query)
 		return (
 	    <div className="search-books">
 	      <div className="search-books-bar">
@@ -61,6 +63,7 @@ class SearchBooks extends Component {
 	        		searchResults ?
 		        	searchResults.map((book) => (
 		        		<Book
+		        			key={book.id}
 		        			book={book}
 		        			onMove={onMove}
 		        		/>

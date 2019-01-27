@@ -23,7 +23,7 @@ class BooksApp extends React.Component {
 
   componentDidMount() {
     BooksAPI.getAll().then((books) => {
-      this.setState( { books })      
+      this.setState({ books })      
       }
     )
   }
@@ -32,17 +32,20 @@ class BooksApp extends React.Component {
   // either by simply repositioning shelves positions
   // either by using array methods splice and push, on the proper positions
   handleOnMove(e, book) {
-    if(book.shelf.toString() != e.target.value.toString() ) {
+    if(book.shelf != e.target.value ) {
       BooksAPI.update(book, e.target.value)
-      BooksAPI.getAll().then((books) => {
-        this.setState( { books })      
-      })
+        console.log(`${book} Moved from ${book.shelf} to ${e.target.value}!`)
+        // Had to delay state change because it would not happend everytime
+        setTimeout(() => {
+          BooksAPI.getAll().then((books) => {
+            this.setState({ books })          
+        })
+      }, 500)
     }
   }
 
   render() {
     const { books } = this.state
-      console.log(this.state.books)
     return (
       <div className="app">
         <Route path="/search" render={() => (

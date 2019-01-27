@@ -24,10 +24,11 @@ class Shelves extends Component {
 	          <div className="bookshelf-books">
   	          <ol className="books-grid">
   	          {
-	  	          books.filter((book) => book.shelf == Object.keys(shelf)).map((book, i) => (
+	  	          books.filter((book) => book.shelf == Object.keys(shelf)).map((book) => (
 	  	          	<Book
-			               onMove={onMove}
-			               book={book}
+	  	          		key={book.id}
+										onMove={onMove}
+										book={book}
 	  	          	/>
 	  	          ))  	          	
   	          }

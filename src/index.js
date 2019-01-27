@@ -1,21 +1,5 @@
 /**
  * ________________TODOS________________
- *
- * ### Study Jam 21/07 - FEND P7 - My Reads ###
- *
- * @todo follow stesp in Trello/Udacity/Project: MyReads: A Book Tracking App
- *
- * ############################################
- * @todo Add functionality to the BookShelfChanger component
- *		Turns out the books state is all you need, because it has a shelf property, that you can update by calling the BooksAPI update method.
- *			@todo Erase BooksApp.state.shelves
- *			@todo reorganize props and values in the Shelves and BookShelfChanger components to use only props passed down from the books state in the BooksApp component
- *			@todo update the shef property of the books by interacting with the BookShelfChanger component (state will be changed by calling the BooksAPI.update method, in BooksApp.handleOnMove method)
- * @todo Add functionality to the SearchBooks component
- * 		@todo use regular expressions, with the regex.test(), string.match() and array.filter() methods to refine search for books (implement them using npm or yarn packages 'escape-string-regexp' and 'sort-by')
- * 		@todo update the view as the state of the <form> component changes: '<input onChange={(event) => this.updateQuery(event.target.value)}>' ![code view](C:\Users\ricar\reactnd-project-myreads-starter\src\img\2018-12-25.png)
- * @todo
- * @todo
  * @todo see that the project follows Udacity's  Rubric andStyle Guides (HTML, CSS, JS and GIT)
  * @todo -- Optional -- Generate Documentation with [StuleGUidist](https://www.npmjs.com/package/react-styleguidist)
  * @todo -- Optional -- Go above and beyond (add extra features, as mentioned on concept 4)
@@ -63,6 +47,19 @@
  *				@todo	OK Build a Shelves component, that maps on books assigned for each shelf on the shelves state, on a list, nested dynamically
  *				@todo OK create nested maps in the Shelves component, to iterate shelves and it's lists of books, based on App.js's state.
  *				@todo OK apply destructuring to each component's props, to avoid the props.props.props... effect.
+ * @todo OK follow stesp in Trello/Udacity/Project: MyReads: A Book Tracking App
+ * @todo OK Add functionality to the BookShelfChanger component
+ *		Turns out the books state is all you need, because it has a shelf property, that you can update by calling the BooksAPI update method.
+ *			@todo OK Erase BooksApp.state.shelves
+ *			@todo OK reorganize props and values in the Shelves and BookShelfChanger components to use only props passed down from the books state in the BooksApp component
+ *			@todo OK update the shelf property of the books by interacting with the BookShelfChanger component (state will be changed by calling the BooksAPI.update method, in BooksApp.handleOnMove method)
+ * @todo OK Add functionality to the SearchBooks component
+ * 		@todo OK use regular expressions, with the regex.test(), string.match() and array.filter() methods to refine search for books (implement them using npm or yarn packages 'escape-string-regexp' and 'sort-by')
+ * 		@todo OK update the view as the state of the <select> component changes: '<input onChange={(event) => this.updateQuery(event.target.value)}>' ![code view](C:\Users\ricar\reactnd-project-myreads-starter\src\img\2018-12-25.png)
+ *	@todo OK fix bugs
+ *		@todo OK books cant switch shelfs from the search results view, **after you search for a query that is not on the search terms**
+ *		@todo OK If the input is eraseD on the search books field, the books found search results still appear on the view. Got to setState again to []. THIS PROBLEM HAPPENS WHEN THE INPUT IS ERASED TOO FAST
+ *		@todo OK Sometimes changing books from shelfs don't refresh the page
  */
 import React from 'react'
 import ReactDOM from 'react-dom'
