@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import BookShelfChanger from './BookShelfChanger'
 import Book from './Book'
 
 /**
@@ -24,6 +23,7 @@ class Shelves extends Component {
 	          <div className="bookshelf-books">
   	          <ol className="books-grid">
   	          {
+  	          	// Non strict comparison operators are use here, to avoid errors
 	  	          books.filter((book) => book.shelf == Object.keys(shelf)).map((book) => (
 	  	          	<Book
 	  	          		key={book.id}

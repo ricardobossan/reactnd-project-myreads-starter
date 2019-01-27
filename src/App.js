@@ -32,6 +32,7 @@ class BooksApp extends React.Component {
   // either by simply repositioning shelves positions
   // either by using array methods splice and push, on the proper positions
   handleOnMove(e, book) {
+    // Non strict comparison operators are use here, to avoid errors
     if(book.shelf != e.target.value ) {
       BooksAPI.update(book, e.target.value)
         console.log(`${book} Moved from ${book.shelf} to ${e.target.value}!`)

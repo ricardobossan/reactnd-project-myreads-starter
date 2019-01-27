@@ -36,6 +36,7 @@ class SearchBooks extends Component {
 				this.setState({searchResults: []})
 			: this.setState({searchResults: searchResults})				
 		})			
+		// Non strict comparison operators are use here, to avoid errors.
 		: query == "" ?
 		// Had to delay state change because it would not happend everytime
 		setTimeout(() => this.setState({searchResults: []}), 1000)

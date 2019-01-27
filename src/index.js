@@ -1,6 +1,7 @@
 /**
  * ________________TODOS________________
- * @todo see that the project follows Udacity's  Rubric andStyle Guides (HTML, CSS, JS and GIT)
+ * @todo see that the project follows Udacity's  Rubric andStyle Guides (HTML, CSS, JS and GIT (and maybe readme.md too))
+ * @todo comments and README.md
  * @todo -- Optional -- Generate Documentation with [StuleGUidist](https://www.npmjs.com/package/react-styleguidist)
  * @todo -- Optional -- Go above and beyond (add extra features, as mentioned on concept 4)
  * @todo - Optional -- see if there's docs generator for react. Probably just stic with React Dev Tools
