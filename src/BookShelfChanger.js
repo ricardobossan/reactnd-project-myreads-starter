@@ -9,7 +9,7 @@ class BookShelfChanger extends Component {
     const { onMove, book } = this.props
 		return (
 	    <div className="book-shelf-changer">
-	      <select value={book.shelf} onChange={(event) =>
+	      <select value={book.shelf ? book.shelf : "none"} onChange={(event) =>
 	      	{
 	      		onMove(event, book)
 	      	}

@@ -5,6 +5,7 @@ import BookShelfChanger from './BookShelfChanger'
 class Books extends Component {
 	render() {
 		const { book, onMove } = this.props
+    console.log(book.shelf)
 		return (
       <li key={book.id}>
         <div className="book">

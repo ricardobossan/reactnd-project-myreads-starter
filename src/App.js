@@ -18,7 +18,6 @@ class BooksApp extends React.Component {
      * pages, as well as provide a good URL they can bookmark and share.
      */
     books: [],    
-    shelves: []    
   }
 
   componentDidMount() {
@@ -47,11 +46,14 @@ class BooksApp extends React.Component {
 
   render() {
     const { books } = this.state
-    return (
+    console.log(this.state)
+/*    console.log(this.state.books)
+*/    return (
       <div className="app">
         <Route path="/search" render={() => (
           <SearchBooks
             onMove={this.handleOnMove.bind(this)}
+            books={books}
           />
           )}/>
         <Route exact path="/" render={() => (

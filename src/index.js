@@ -1,5 +1,10 @@
 /**
+ * ________RESUBMISSION_________
+ * @todo keep working on SearchBook.checkShelves
+ *
  * ________________TODOS________________
+ * @todo see that the project follows Udacity's  Rubric andStyle Guides (HTML, CSS, JS and GIT (and maybe readme.md too))
+ * 
  * @todo see that the project follows Udacity's  Rubric andStyle Guides (HTML, CSS, JS and GIT (and maybe readme.md too))
  * @todo comments and README.md
  * @todo -- Optional -- Generate Documentation with [StuleGUidist](https://www.npmjs.com/package/react-styleguidist)
